@@ -1,26 +1,23 @@
 // ═══════════════════════════════════════════════════════════
 // validdata.de — Main Stylesheet
-// BEM Architecture with SCSS
 // ═══════════════════════════════════════════════════════════
 
-// ─── FOUNDATION ───────────────────────────────────────────
-@import 'foundation/tokens';
-@import 'foundation/reset';
-@import 'foundation/base';
+// Import tokens first
+@import 'tokens';
 
-// ─── COMPONENTS ───────────────────────────────────────────
+// Base styles
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/layout';
+
+// Components
 @import 'components/container';
-@import 'components/section';
-@import 'components/heading';
-@import 'components/content';
-@import 'components/button';
+@import 'components/buttons';
+@import 'components/navigation';
+@import 'components/hero';
+@import 'components/footer';
+@import 'components/overline';
 
-// ─── LAYOUT ───────────────────────────────────────────────
-@import 'layout/header';
-@import 'layout/nav';
-@import 'layout/main';
-@import 'layout/footer';
-
-// ─── UTILITIES ────────────────────────────────────────────
+// Utilities
 @import 'utilities/spacing';
-@import 'utilities/visibility';
+@import 'utilities/text';
