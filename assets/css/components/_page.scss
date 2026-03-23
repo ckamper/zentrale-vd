@@ -1,0 +1,9 @@
+// ═══════════════════════════════════════════════════════════
+// Page Component — Root page wrapper
+// ═══════════════════════════════════════════════════════════
+
+.vd-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

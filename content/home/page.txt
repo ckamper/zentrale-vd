@@ -1,0 +1,3 @@
+Title: Home
+----
+Text: Willkommen bei validdata.de - Ihrem Partner für professionelle Datenvalidierung.

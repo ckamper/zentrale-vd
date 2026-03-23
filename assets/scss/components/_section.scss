@@ -1,0 +1,38 @@
+// ═══════════════════════════════════════════════════════════
+// Section Component
+// ═══════════════════════════════════════════════════════════
+
+.vd-section {
+  @include section();
+  
+  &--sm {
+    @include section("sm");
+  }
+  
+  &--xl {
+    @include section("xl");
+  }
+  
+  &--dark {
+    background-color: $color-charcoal;
+    color: $color-white;
+  }
+  
+  &--ink {
+    background-color: $color-ink;
+    color: $color-white;
+  }
+  
+  &--smoke {
+    background-color: $color-smoke;
+  }
+}
+
+.vd-section__header {
+  margin-bottom: $space-2xl;
+  text-align: center;
+  
+  &--left {
+    text-align: left;
+  }
+}

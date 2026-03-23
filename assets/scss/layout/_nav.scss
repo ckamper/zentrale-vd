@@ -1,0 +1,36 @@
+// ═══════════════════════════════════════════════════════════
+// Navigation Layout
+// ═══════════════════════════════════════════════════════════
+
+.vd-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $space-lg 0;
+}
+
+.vd-nav__logo {
+  font-family: $font-display;
+  font-size: $font-size-h4;
+  font-weight: $weight-bold;
+  color: $color-charcoal;
+}
+
+.vd-nav__menu {
+  display: flex;
+  gap: $space-2xl;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.vd-nav__link {
+  font-weight: $weight-medium;
+  color: $text-secondary;
+  transition: color $transition-base;
+  
+  &:hover,
+  &--active {
+    color: $color-saffron;
+  }
+}

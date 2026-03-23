@@ -1,0 +1,30 @@
+// ═══════════════════════════════════════════════════════════
+// Content Component — Rich text content
+// ═══════════════════════════════════════════════════════════
+
+.vd-content {
+  max-width: $width-content;
+
+  p {
+    font-size: $font-size-body;
+    line-height: $leading-relaxed;
+    margin-bottom: $space-md;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: $space-2xl;
+    margin-bottom: $space-md;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  ul, ol {
+    margin-bottom: $space-lg;
+  }
+
+  li {
+    margin-bottom: $space-sm;
+  }
+}

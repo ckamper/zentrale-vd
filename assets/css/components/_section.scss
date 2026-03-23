@@ -1,0 +1,31 @@
+// ═══════════════════════════════════════════════════════════
+// Section Component — Content sections
+// ═══════════════════════════════════════════════════════════
+
+.vd-section {
+  @include section;
+
+  // Size modifiers
+  &--sm {
+    @include section("sm");
+  }
+
+  &--xl {
+    @include section("xl");
+  }
+
+  // Background modifiers
+  &--smoke {
+    background: $color-smoke;
+  }
+
+  &--dark {
+    background: $color-charcoal;
+    color: $text-on-dark;
+  }
+
+  &--ink {
+    background: $color-ink;
+    color: $text-on-dark;
+  }
+}

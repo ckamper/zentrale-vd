@@ -1,0 +1,49 @@
+// ═══════════════════════════════════════════════════════════
+// Content Component
+// ═══════════════════════════════════════════════════════════
+
+.vd-content {
+  max-width: $width-content;
+  
+  // Typography within content
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: $space-2xl;
+    margin-bottom: $space-md;
+    
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  
+  p {
+    margin-bottom: $space-md;
+  }
+  
+  // Lists
+  ul, ol {
+    margin-bottom: $space-md;
+    padding-left: $space-lg;
+    
+    li {
+      margin-bottom: $space-sm;
+    }
+  }
+  
+  ul {
+    list-style: disc;
+  }
+  
+  ol {
+    list-style: decimal;
+  }
+  
+  // Blockquotes
+  blockquote {
+    margin: $space-2xl 0;
+    padding: $space-lg;
+    border-left: 4px solid $color-saffron;
+    background: $color-smoke;
+    border-radius: $radius-md;
+    font-style: italic;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "validdata-de-relaunch",
+  "version": "1.0.0",
+  "description": "validdata.de website relaunch with Kirby CMS",
+  "scripts": {
+    "dev": "sass --watch assets/scss:assets/css --style=expanded --source-map",
+    "build": "sass assets/scss:assets/css --style=compressed --no-source-map",
+    "serve": "php -S localhost:8000"
+  },
+  "devDependencies": {
+    "sass": "^1.70.0"
+  },
+  "keywords": ["kirby", "cms", "validdata", "scss", "bem"],
+  "author": "validdata.de",
+  "license": "MIT"
+}

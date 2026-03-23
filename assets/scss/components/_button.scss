@@ -1,0 +1,24 @@
+// ═══════════════════════════════════════════════════════════
+// Button Component
+// ═══════════════════════════════════════════════════════════
+
+.vd-btn {
+  @include btn-primary();
+  
+  &--ghost {
+    @include btn-ghost();
+  }
+  
+  &--ghost-dark {
+    @include btn-ghost(true);
+  }
+  
+  &--dark {
+    @include btn-primary(true);
+  }
+  
+  &--compact {
+    padding: $space-sm $space-lg;
+    font-size: 14px;
+  }
+}

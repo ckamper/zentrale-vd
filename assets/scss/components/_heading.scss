@@ -1,0 +1,45 @@
+// ═══════════════════════════════════════════════════════════
+// Heading Component
+// ═══════════════════════════════════════════════════════════
+
+.vd-heading {
+  font-family: $font-display;
+  font-weight: $weight-bold;
+  color: inherit;
+  
+  &--display {
+    font-size: $font-size-display;
+    line-height: $leading-tight;
+    letter-spacing: $tracking-tighter;
+  }
+  
+  &--h1 {
+    font-size: $font-size-h1;
+    line-height: $leading-tight;
+    letter-spacing: $tracking-tighter;
+  }
+  
+  &--h2 {
+    font-size: $font-size-h2;
+    line-height: $leading-snug;
+    letter-spacing: $tracking-tight;
+  }
+  
+  &--h3 {
+    font-size: $font-size-h3;
+    line-height: $leading-heading;
+    letter-spacing: $tracking-tight;
+    font-weight: $weight-semibold;
+  }
+  
+  &--h4 {
+    font-size: $font-size-h4;
+    line-height: $leading-heading;
+    letter-spacing: $tracking-normal;
+    font-weight: $weight-semibold;
+  }
+}
+
+.vd-overline {
+  @include overline;
+}

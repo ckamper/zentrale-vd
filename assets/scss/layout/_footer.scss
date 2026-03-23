@@ -1,0 +1,19 @@
+// ═══════════════════════════════════════════════════════════
+// Footer Layout
+// ═══════════════════════════════════════════════════════════
+
+.vd-footer {
+  background: $color-ink;
+  color: $text-on-dark;
+  padding: $space-2xl 0;
+  margin-top: auto;
+}
+
+.vd-footer__content {
+  text-align: center;
+}
+
+.vd-footer__text {
+  margin: 0;
+  color: $text-on-dark-secondary;
+}

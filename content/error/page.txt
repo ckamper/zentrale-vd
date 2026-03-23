@@ -1,0 +1,3 @@
+Title: Fehler
+----
+Text: Die angeforderte Seite konnte nicht gefunden werden.

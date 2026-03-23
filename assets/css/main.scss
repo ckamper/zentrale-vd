@@ -1,0 +1,245 @@
+// ═══════════════════════════════════════════════════════════
+// validdata.de — Main Stylesheet
+// ═══════════════════════════════════════════════════════════
+
+@import 'tokens';
+
+// ─── RESET & BASE ─────────────────────────────────────────
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-body;
+  font-size: $font-size-body;
+  line-height: $leading-relaxed;
+  color: $text-primary;
+  background-color: $color-smoke;
+  -webkit-font-smoothing: antialiased;
+}
+
+// ─── LAYOUT COMPONENTS ────────────────────────────────────
+
+.vd-container {
+  @include container;
+}
+
+.vd-section {
+  @include section;
+  
+  &--light {
+    background-color: $color-white;
+  }
+  
+  &--dark {
+    background-color: $color-charcoal;
+    color: $color-white;
+  }
+}
+
+.vd-section__header {
+  text-align: center;
+  max-width: $width-narrow;
+  margin: 0 auto $space-2xl;
+}
+
+.vd-section__title {
+  @include section-heading;
+  font-size: $font-size-h2;
+}
+
+.vd-section__subline {
+  @include section-subline;
+}
+
+.vd-overline {
+  @include overline;
+}
+
+// ─── HEADER ───────────────────────────────────────────────
+
+.vd-header {
+  background-color: $color-white;
+  border-bottom: 1px solid $color-mist;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.vd-header__container {
+  @include container;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.vd-header__logo {
+  font-family: $font-display;
+  font-size: 24px;
+  font-weight: $weight-bold;
+  color: $color-charcoal;
+  text-decoration: none;
+}
+
+.vd-header__nav {
+  display: flex;
+  gap: $space-2xl;
+  
+  a {
+    font-weight: $weight-medium;
+    color: $text-secondary;
+    text-decoration: none;
+    transition: color $transition-base;
+    
+    &:hover {
+      color: $color-saffron;
+    }
+  }
+}
+
+// ─── HERO ─────────────────────────────────────────────────
+
+.vd-hero {
+  background-color: $color-ink;
+  color: $color-white;
+  @include section("xl");
+  text-align: center;
+}
+
+.vd-hero__container {
+  @include container;
+}
+
+.vd-hero__content {
+  max-width: $width-content;
+  margin: 0 auto;
+}
+
+.vd-hero__title {
+  font-family: $font-display;
+  font-size: $font-size-display;
+  font-weight: $weight-bold;
+  line-height: $leading-tight;
+  letter-spacing: $tracking-tighter;
+  margin-bottom: $space-lg;
+}
+
+.vd-hero__subline {
+  font-size: $font-size-body-lg;
+  color: $text-on-dark-secondary;
+  margin-bottom: $space-xl;
+}
+
+.vd-hero__text {
+  font-size: $font-size-body-lg;
+  color: $text-on-dark-secondary;
+  margin-bottom: $space-2xl;
+  
+  p {
+    margin-bottom: $space-md;
+    &:last-child { margin-bottom: 0; }
+  }
+}
+
+.vd-hero__actions {
+  display: flex;
+  gap: $space-lg;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+// ─── BUTTONS ──────────────────────────────────────────────
+
+.vd-btn {
+  @include btn-primary;
+  
+  &--ghost {
+    @include btn-ghost(true);
+  }
+}
+
+// ─── FOOTER ───────────────────────────────────────────────
+
+.vd-footer {
+  background-color: $color-ink;
+  color: $color-white;
+  @include section;
+}
+
+.vd-footer__container {
+  @include container;
+}
+
+.vd-footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: $space-2xl;
+  flex-wrap: wrap;
+  gap: $space-xl;
+}
+
+.vd-footer__brand {
+  strong {
+    font-family: $font-display;
+    font-size: 20px;
+    display: block;
+    margin-bottom: $space-sm;
+  }
+  
+  p {
+    color: $text-on-dark-secondary;
+  }
+}
+
+.vd-footer__links {
+  display: flex;
+  gap: $space-lg;
+  
+  a {
+    color: $text-on-dark-secondary;
+    text-decoration: none;
+    transition: color $transition-base;
+    
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
+
+.vd-footer__bottom {
+  text-align: center;
+  padding-top: $space-lg;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  
+  p {
+    color: $text-on-dark-tertiary;
+    font-size: $font-size-body-sm;
+  }
+}
+
+// ─── RESPONSIVE ───────────────────────────────────────────
+
+@media (max-width: 768px) {
+  .vd-header__nav {
+    display: none; // Mobile nav später implementieren
+  }
+  
+  .vd-hero__actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .vd-footer__content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .vd-footer__links {
+    justify-content: center;
+  }
+}

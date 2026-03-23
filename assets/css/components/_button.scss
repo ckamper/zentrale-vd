@@ -1,0 +1,21 @@
+// ═══════════════════════════════════════════════════════════
+// Button Component — Interactive buttons
+// ═══════════════════════════════════════════════════════════
+
+.vd-btn {
+  &--primary {
+    @include btn-primary;
+  }
+
+  &--primary-dark {
+    @include btn-primary(true);
+  }
+
+  &--ghost {
+    @include btn-ghost;
+  }
+
+  &--ghost-dark {
+    @include btn-ghost(true);
+  }
+}
